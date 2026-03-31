@@ -1,25 +1,8 @@
 import React from 'react';
 import './Product.css'
 
-const Product = ({product}) => {
-
-/**
- *  {
-    "product_name": "Social Media Content Kit",
-    "icon_url": "../assets/products/social-media.png",
-    "badge": "Best Seller",
-    "description": "Complete toolkit for creating engaging social media content across all platforms.",
-    "price": "$39",
-    "billing_cycle": "Mo",
-    "features": [
-      "5000+ assets",
-      "Scheduler included",
-      "Analytics dashboard"
-    ]
-  }
-] 
- * */ 
-
+const Product = ({product, addProduct, cart}) => {
+    const isPurchased = cart.some(p => p.id === product.id);
 
     let badgeColor = "";
     if (product.badge==="Best Seller") {
@@ -55,7 +38,19 @@ const Product = ({product}) => {
                     </li>)
                     }
                 </ul>
-                <button className="btn active-btn rounded-full w-full p-3">Buy Now</button>
+                <button className={`btn ${
+                    isPurchased
+                    ? "inactive-btn"
+                    : "active-btn"
+                } rounded-full w-full p-3`} id={`buyBtn-${product.id}`} onClick={()=>{addProduct(product)}} disabled={
+                    isPurchased
+                    ? "disabled"
+                    : null
+                }>{
+                    isPurchased
+                    ? "Purchased"
+                    : "Buy Now"
+                }</button>
                 <div className={`badge ${badgeColor} absolute top-3 rounded-full  font-extralight p-3 min-w-23.75 right-3`}>
                     {
                         product.badge
