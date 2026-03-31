@@ -1,3 +1,7 @@
+:root {
+  --brand-color: linear-gradient(90deg, #4F39F6 0%, #9514FA 100%);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 * {
@@ -5,11 +9,11 @@
 }
 
 .brand-bg {
-  background: linear-gradient(90deg, #4F39F6 0%, #9514FA 100%);
+  background: var(--brand-color)
 }
 
 .brand-text {
-  background: linear-gradient(90deg, #4F39F6 0%, #9514FA 100%);
+  background: var(--brand-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
