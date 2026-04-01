@@ -2,26 +2,6 @@ import React from 'react';
 
 const Pricing = ({ pricing }) => {
 
-
-    /**
-     * [
-      {
-        "id": 1,
-        "plan_name": "Starter",
-        "description": "Perfect for getting started",
-        "price": "0",
-        "billing_cycle": "Month",
-        "features": [
-          "Access to 10 free tools",
-          "Basic templates",
-          "Community support",
-          "1 project per month"
-        ],
-        "button_text": "Get Started Free",
-        "is_popular": false
-      },
-     */
-
     let cardStyle = "";
     let btnStyle = "";
     let paraColor = "";

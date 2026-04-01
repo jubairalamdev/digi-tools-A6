@@ -14,9 +14,9 @@ const Steps = () => {
                     </p>
                 </div>
                 <div className='grid px-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
-                    <Step stepImg="/public/assets/user.png" stepHeading="Create Account" stepPara="Sign up for free in seconds. No credit card required to get started." stepNo="01"/>
-                    <Step stepImg="/public/assets/package.png" stepHeading="Choose Products" stepPara="Browse our catalog and select the tools that fit your needs." stepNo="02"/>
-                    <Step stepImg="/public/assets/rocket.png" stepHeading="Start Creating" stepPara="Download and start using your premium tools immediately." stepNo="03"/>
+                    <Step stepImg="/assets/user.png" stepHeading="Create Account" stepPara="Sign up for free in seconds. No credit card required to get started." stepNo="01"/>
+                    <Step stepImg="/assets/package.png" stepHeading="Choose Products" stepPara="Browse our catalog and select the tools that fit your needs." stepNo="02"/>
+                    <Step stepImg="/assets/rocket.png" stepHeading="Start Creating" stepPara="Download and start using your premium tools immediately." stepNo="03"/>
                 </div>
             </div>
         </div>

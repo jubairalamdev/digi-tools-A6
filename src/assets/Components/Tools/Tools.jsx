@@ -4,7 +4,7 @@ import Products from './Products/Products';
 import axios from 'axios';
 import Cart from './Cart/Cart';
 
-const productDataPromise = axios.get("/public/db/db.json")
+const productDataPromise = axios.get("/db/db.json")
 
 const Tools = ({addProduct, removeProduct, checkout, cart}) => {
 

@@ -2,7 +2,7 @@ import React, { use } from 'react';
 import Pricing from './Pricing/Pricing';
 import axios from 'axios';
 
-const pricingDataPromise = axios.get("/public/db/pricing.json")
+const pricingDataPromise = axios.get("/db/pricing.json")
 
 const Pricings = () => {
 
