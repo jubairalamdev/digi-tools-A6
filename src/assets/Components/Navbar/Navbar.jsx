@@ -1,9 +1,9 @@
 import { ShoppingCart } from 'lucide-react';
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({cart}) => {
     return (
-        <nav className='w-full bg-base-100 shadow-sm'>
+        <nav className='w-full bg-base-100 shadow-sm fixed top-0 z-40'>
             <div className="navbar  max-w-300 mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -32,7 +32,14 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn btn-ghost w-13 -mr-4"><ShoppingCart /></a>
+                    <a className="btn btn-ghost w-13 -mr-4 relative">
+                        <ShoppingCart />
+                        {
+                            cart.length>0
+                            ? <div className="badge badge-error border-0 text-base-100 py-1 px-1.5 absolute right-1 -top-1  rounded-full">{cart.length}</div>
+                            : null
+                        }
+                    </a>
                     <a className="btn btn-ghost">Login</a>
                     <a className="btn brand-bg text-base-100 rounded-full">Get Started</a>
                 </div>

@@ -5,7 +5,7 @@ import banner from '/public/assets/banner.png'
 
 const Banner = () => {
     return (
-        <div className='flex gap-16 py-16 items-center px-5 xl:px-0 flex-col-reverse md:flex-row max-w-300 mx-auto'>
+        <div className='mt-20 flex gap-16 py-16 items-center px-5 xl:px-0 flex-col-reverse md:flex-row max-w-300 mx-auto'>
             <div className='space-y-4 flex-1'>
                 <div className="badge bg-primary/10 text-primary py-4 rounded-full font-semibold ">
                     <CircleDotDashed className='w-4' />

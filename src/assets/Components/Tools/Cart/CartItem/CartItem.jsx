@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CartItem = ({product}) => {
+const CartItem = ({product, removeProduct}) => {
 
 /**
  * [
@@ -30,7 +30,7 @@ const CartItem = ({product}) => {
                     <p className='text-base-content/60'>${product.price}</p>
                 </div>
             </div>
-            <button className="btn btn-ghost text-error">Remove</button>
+            <button className="btn btn-ghost text-error" onClick={()=>{removeProduct(product)}}>Remove</button>
         </div>
     );
 };

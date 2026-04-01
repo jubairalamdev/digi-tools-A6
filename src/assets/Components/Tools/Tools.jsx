@@ -6,10 +6,9 @@ import Cart from './Cart/Cart';
 
 const productDataPromise = axios.get("/public/db/db.json")
 
-const Tools = () => {
+const Tools = ({addProduct, removeProduct, checkout, cart}) => {
 
     const [tab, setTab] = useState("Products");
-    const [cart, setCart] = useState([]);
 
     const productData = use(productDataPromise);
 
@@ -29,21 +28,12 @@ const Tools = () => {
 
     }
 
-    const addProduct = (product) => {
-        const newCart = [...cart, product];
-        setCart(newCart);
-        // console.log(newCart)
-        const buyBtn = document.getElementById(`buyBtn-${product.id}`);
-        buyBtn.setAttribute("disabled", "")
-        buyBtn.classList.replace("active-btn", "inactive-btn");
-        buyBtn.innerText = "Purchased";
-        // toast.success("Model Subscribed Successfully!")
-    }
+    
 
     return (
         <div className='py-32 space-y-10 max-w-300 mx-auto'>
             <div className='text-center flex items-center flex-col gap-4'>
-                <h2 className='font-extrabold text-5xl text-base-content/85'>
+                <h2 className='font-bold text-5xl text-base-content/85'>
                     Premium Digital Tools
                 </h2>
                 <p className='text-base-content/50 w-[50%]'>
@@ -63,7 +53,7 @@ const Tools = () => {
                     {
                         tab === "Products"
                         ? <Products productData={productData} addProduct={addProduct} cart={cart}/>
-                        : <Cart cart={cart} />
+                        : <Cart cart={cart} removeProduct={removeProduct} checkout={checkout}/>
                         
                     }
                 </Suspense>
