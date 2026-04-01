@@ -1,7 +1,7 @@
 import React from 'react';
 import CartItem from './CartItem/CartItem';
 
-const Cart = ({ cart, removeProduct, checkout }) => {
+const Cart = ({ cart, removeProduct, checkout, switchTabs }) => {
 
     let total = 0;
     for (let i = 0; i < cart.length; i++) {
@@ -27,7 +27,12 @@ const Cart = ({ cart, removeProduct, checkout }) => {
                             Proceed To Checkout
                         </button>
                     </div>
-                    : <h3 className='text-xl font-medium text-base-content/80'>No Items are found in Cart</h3>
+                    : <div className='space-y-5'>
+                         <h3 className='text-xl font-medium text-base-content/80'>No Items are found in Cart.</h3>
+                         <button className="brand-bg btn border-none text-base-100 py-6 text-xl w-fit rounded-full" onClick={() => { switchTabs("Products")}}>
+                            Add Products
+                        </button>
+                    </div>
             }
 
         </div>

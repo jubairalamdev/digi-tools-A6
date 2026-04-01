@@ -13,20 +13,20 @@ const Navbar = ({cart}) => {
                         <ul
                             tabIndex="-1"
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><a>Products</a></li>
+                            <li><a href='#tools'>Products</a></li>
                             <li><a>Features</a></li>
-                            <li><a>Pricing</a></li>
+                            <li><a href='#pricing'>Pricing</a></li>
                             <li><a>Testimonials</a></li>
                             <li><a>FAQ</a></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-3xl font-bold brand-text">DigiTools</a>
+                    <a className="btn btn-ghost text-3xl font-bold brand-text" href='/index.html'>DigiTools</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 space-x-5 font-semibold">
-                        <li><a>Products</a></li>
+                        <li><a href='#tools'>Products</a></li>
                         <li><a>Features</a></li>
-                        <li><a>Pricing</a></li>
+                        <li><a href='#pricing'>Pricing</a></li>
                         <li><a>Testimonials</a></li>
                         <li><a>FAQ</a></li>
                     </ul>

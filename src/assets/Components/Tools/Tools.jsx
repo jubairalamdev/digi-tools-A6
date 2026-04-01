@@ -52,7 +52,7 @@ const Tools = ({addProduct, removeProduct, checkout, cart}) => {
                     {
                         tab === "Products"
                         ? <Products productData={productData} addProduct={addProduct} cart={cart}/>
-                        : <Cart cart={cart} removeProduct={removeProduct} checkout={checkout}/>
+                        : <Cart cart={cart} removeProduct={removeProduct} checkout={checkout} switchTabs={switchTabs}/>
                         
                     }
                 </Suspense>

@@ -8,6 +8,7 @@ import Steps from './assets/Components/Steps/Steps'
 import Pricings from './assets/Components/Pricings/Pricings'
 import Footer from './assets/Components/Footer/Footer'
 import CTA from './assets/Components/CTA/CTA'
+import { toast, ToastContainer } from 'react-toastify'
 
 function App() {
 
@@ -21,16 +22,18 @@ function App() {
         buyBtn.setAttribute("disabled", "")
         buyBtn.classList.replace("active-btn", "inactive-btn");
         buyBtn.innerText = "Purchased";
-        // toast.success("Model Subscribed Successfully!")
+        toast.success("Product Added Successfully!")
     }
 
     const removeProduct = (product) => {
         const updatedList = cart.filter(p => p !== product);
         setCart(updatedList);
+        toast.success("Product Removed Successfully!")
     }
 
     const checkout = () => {
         setCart([]);
+        toast.success("Payment Successful!")
     }
 
   return (
@@ -43,6 +46,7 @@ function App() {
       <Pricings />
       <CTA />
       <Footer />
+      <ToastContainer />
     </>
   )
 }
