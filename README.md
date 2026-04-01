@@ -1,8 +1,8 @@
-# 🎯 DigiTools - Digital Product Store
+# DigiTools - Digital Product Store
 
 **DigiTools** is a simple website where users can find and buy digital tools like AI writers and resume builders. I built this project to learn how to manage data and show it on a screen using **React**.
 
-## 🛠️ Technology I Used
+## Technology I Used
 * **React.js**: A library to build the user interface.
 * **Tailwind CSS & DaisyUI**: Tools to make the website look pretty and clean.
 * **React-Toastify**: A package to show "success" or "error" messages to the user.
