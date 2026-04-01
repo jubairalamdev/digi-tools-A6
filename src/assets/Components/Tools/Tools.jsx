@@ -25,13 +25,12 @@ const Tools = ({addProduct, removeProduct, checkout, cart}) => {
             productsTabBtn.classList.replace("active-tab", "inactive-tab")
             CartTabBtn.classList.replace("inactive-tab", "active-tab")
         }
-
     }
 
     
 
     return (
-        <div className='py-10 lg:py-32 space-y-10 max-w-300 mx-auto'>
+        <div className='py-10 lg:py-32 space-y-10 max-w-300 mx-auto' id='tools'>
             <div className='text-center flex items-center flex-col gap-4'>
                 <h2 className='font-bold text-4xl lg:text-5xl text-base-content/85'>
                     Premium Digital Tools

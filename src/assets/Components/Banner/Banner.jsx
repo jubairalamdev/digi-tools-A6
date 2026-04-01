@@ -21,9 +21,9 @@ const Banner = () => {
                     Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today. Explore Products
                 </p>
                 <div className='mt-4 space-x-4'>
-                    <button className="btn brand-bg shadow-md rounded-full  py-5 transition hover:-translate-y-0.5 text-base-100">
+                    <a className="btn brand-bg shadow-md rounded-full  py-5 transition hover:-translate-y-0.5 text-base-100" href="#tools">
                         Explore Products
-                    </button>
+                    </a>
                     <button className="btn btn-outline btn-primary rounded-full  py-5 transition hover:-translate-y-0.5 hover:brand-bg hover:text-base-100">
                         <img src={play} alt="playBtn" />
                         Watch Demo
