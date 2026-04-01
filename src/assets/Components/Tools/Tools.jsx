@@ -31,12 +31,12 @@ const Tools = ({addProduct, removeProduct, checkout, cart}) => {
     
 
     return (
-        <div className='py-32 space-y-10 max-w-300 mx-auto'>
+        <div className='py-10 lg:py-32 space-y-10 max-w-300 mx-auto'>
             <div className='text-center flex items-center flex-col gap-4'>
-                <h2 className='font-bold text-5xl text-base-content/85'>
+                <h2 className='font-bold text-4xl lg:text-5xl text-base-content/85'>
                     Premium Digital Tools
                 </h2>
-                <p className='text-base-content/50 w-[50%]'>
+                <p className='text-base-content/50 w-[90%] lg:w-[50%]'>
                     Choose from our curated collection of premium digital products designed to boost your productivity and creativity.
                 </p>
                 <div className='mt-4 space-x-2'>
@@ -48,7 +48,7 @@ const Tools = ({addProduct, removeProduct, checkout, cart}) => {
                     </button>
                 </div>
             </div>
-            <div className='w-full'>
+            <div className='w-full px-5 xl:px-0'>
                 <Suspense fallback={<span className="loading loading-spinner text-primary"></span>}>
                     {
                         tab === "Products"

@@ -6,6 +6,7 @@ import Navbar from './assets/Components/Navbar/Navbar'
 import Tools from './assets/Components/Tools/Tools'
 import Steps from './assets/Components/Steps/Steps'
 import Pricings from './assets/Components/Pricings/Pricings'
+import Footer from './assets/Components/Footer/Footer'
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
       <Tools addProduct={addProduct} removeProduct={removeProduct} checkout={checkout} cart={cart}/>
       <Steps />
       <Pricings />
+      <Footer />
     </>
   )
 }

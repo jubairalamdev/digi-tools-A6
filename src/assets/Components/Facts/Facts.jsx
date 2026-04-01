@@ -2,7 +2,7 @@ import React from 'react';
 
 const Facts = () => {
     return (
-        <div className='brand-bg py-16 w-full text-base-100'>
+        <div className='brand-bg py-10 md:py-16 w-full text-base-100'>
             <div className='flex justify-around max-w-300 mx-auto items-center flex-col md:flex-row space-y-5'>
                 <div>
                     <h3 className='text-6xl font-extrabold'>50K+</h3>
